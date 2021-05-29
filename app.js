@@ -8,6 +8,7 @@ const app = () =>  {
     const sounds = document.querySelectorAll('.sound-picker button');
     //time display
     const timeDisplay = document.querySelector('.time-display')
+    const timeSelect = document.querySelectorAll(".time-select button");
     //get the length of the outline
     const outlineLength = outline.getTotalLength();
     //duration
@@ -19,6 +20,16 @@ const app = () =>  {
     //play sound
         play.addEventListener("click", () => {
             checkPlaying(song);
+        });
+
+    //select sound
+    timeSelect.forEach(option =>{
+        option.addEventListener('click', function(){
+            fakeDuration = this.getAttribute('data-time');
+            timeDisplay.textContent = `${Math.floor(fakeDuration / 60)}:${Math.floor(
+                fakeDuration % 60
+            )}`;
+        });
         });
 
     //create a function specific to stop and play the sounds
