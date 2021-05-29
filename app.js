@@ -56,8 +56,15 @@ const app = () =>  {
         //animate the circle
         let progress = outlineLength - (currentTime / fakeDuration) * outlineLength;
         outline.style.strokeDashoffset = progress;
-        //animate the display 
-        timeDisplay.textContent = `${minutes}: ${seconds}`;
+        //animate the text 
+        timeDisplay.textContent = `${minutes}:${seconds}`;
+
+        if(currentTime >= fakeDuration) {
+            song.pause();
+            song.curentTime = 0;
+            play.src = "./svg/play.svg";
+            video.pause();
+        };
     };
 };
 
