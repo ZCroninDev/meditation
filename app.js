@@ -32,7 +32,22 @@ const app = () =>  {
             video.pause();
             play.src = './svg/play.svg';
         }  
-        }
     };
+
+    //circle animation
+    song.ontimeupdate = () => {
+        let currentTime = song.currentTime;
+        let elapsed = fakeDuration - currentTime;
+        let seconds = Math.floor(elapsed % 60);
+        let minutes = Math.floor(elapsed / 60);
+    
+
+        //animate the circle
+        let progress = outlineLength - (currentTime / fakeDuration) * outlineLength;
+        outline.style.strokeDashoffset = progress;
+        //animate the display 
+        timeDisplay.textContent = `${minutes}: ${seconds}`;
+    };
+};
 
 app();
