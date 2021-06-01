@@ -14,7 +14,7 @@ Of note is that this shows up three separate times in the project: The initial r
 
 ### Minor thoughts
 
-It might be good to throw in simple hover animations (css) for the sunshine and rain buttons for homogenous user feedback.
+It might be good to throw in simple hover animations (css) for the sunshine and rain buttons for homogenous user feedback. The 2, 5, and 10 minutes buttons have this, might be good to make it the same across all buttons?
 
 Also, maybe throw in a `cursor: pointer` on the play/pause button?
 
