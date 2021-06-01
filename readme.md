@@ -5,7 +5,7 @@
 ### Seconds, modulo and division weirdness
 
 #### ex. 1
-![image](https://github.com/ZCroninDev/meditation/meditation-app-master/img/img1.png)
+![image](https://github.com/ZCroninDev/meditation/blob/main/meditation-app-master/img/img1.png)
 
 Sometimes it's tricky correctly processing 0's and singular digits. In Excel, you usually have to specify a cell needs to format like a 'Number' before it will show 08 instead of 8.
 Similarly, JS will never render singular numbers like 02 or 04 instead of 2 or 4. So some simple logic is needed to correctly format. I've thrown in some examples in your project, check it out in app.js
