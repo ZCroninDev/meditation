@@ -21,4 +21,4 @@ Also, maybe throw in a `cursor: pointer` on the play/pause button?
 It'd be interesting to mess with an opacity fade that takes a long time (1s? 2s?) when you click sunshine or rain to change the background. This would save your awkward jump to the 
 next image. Currently it just snaps over
 
-Otherwise I think it looks great! Most of my comments are just polish, so good job!.
+Otherwise I think it looks great! Most of my comments are just polish, so good job!
