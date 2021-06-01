@@ -17,7 +17,9 @@ const app = () =>  {
     timeDisplay.textContent = `${Math.floor(fakeDuration / 60)}:${Math.floor(
       fakeDuration % 60
     )}`;
-    
+	// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+	// see lines 72-86, same as below
+
     sounds.forEach(sound => {
       sound.addEventListener("click", function() {
         song.src = this.getAttribute("data-sound");
@@ -38,6 +40,16 @@ const app = () =>  {
         timeDisplay.textContent = `${Math.floor(fakeDuration / 60)}:${Math.floor(
           fakeDuration % 60
         )}`;
+		/*
+		// Here also is weirdness with the seconds display
+		// up to you, this being a personal project I'd probably just throw a '0' after the :${Math.floor()}
+		// section. If it was for a client, I'd throw more logic in like we did below for the ticker as we wind down.
+		// simple fix would look like:
+		//
+		// 		timeDisplay.textContent = `${Math.floor(fakeDuration / 60)}:0${Math.floor(
+        // 			fakeDuration % 60									   ^^^^
+        // 		)}`;
+		*/
       });
     });
     
@@ -57,6 +69,21 @@ const app = () =>  {
       let currentTime = song.currentTime;
       let elapsed = fakeDuration - currentTime;
       let seconds = Math.floor(elapsed % 60);
+	  /*
+	  //
+	  // something to improve how seconds are rendered if this only returns singular numbers:
+	  // seconds = seconds < 10 ? '0' + seconds : seconds
+	  //
+	  // this reads as:
+	  //
+	  // 		if seconds < 10 {
+	  //			seconds = '0' + seconds
+	  // 		}
+	  // 		else {
+	  //			seconds = seconds
+	  // 		}
+	  //
+	  */
       let minutes = Math.floor(elapsed / 60);
       timeDisplay.textContent = `${minutes}:${seconds}`;
       let progress = outlineLength - (currentTime / fakeDuration) * outlineLength;
