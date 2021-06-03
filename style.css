@@ -45,7 +45,7 @@
   background: #4972a1;
 }
 .sound-picker button:nth-child(2) {
-  background: #a14f49;
+  background: #f0df4d;
 }
 .sound-picker button img {
   height: 100%;
@@ -79,7 +79,7 @@
   pointer-events: none;
 }
 .player-container svg circle {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .time-display {
   color: white;
@@ -95,8 +95,36 @@ video {
   min-width: 100%; 
   min-height: 100%;
   z-index: -10;
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
 
   @media only screen and (max-width: 768px) {
       .app {
