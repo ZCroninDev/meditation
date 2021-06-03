@@ -56,6 +56,10 @@
   color: black;
 }
 
+.play {
+  cursor: pointer;
+}
+
 .player-container {
   position: relative;
   height: 80%;

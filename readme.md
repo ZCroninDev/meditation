@@ -16,8 +16,6 @@ Of note is that this shows up three separate times in the project: The initial r
 
 It might be good to throw in simple hover animations (css) for the sunshine and rain buttons for homogenous user feedback. The 2, 5, and 10 minutes buttons have this, might be good to make it the same across all buttons?
 
-Also, maybe throw in a `cursor: pointer` on the play/pause button?
-
 It'd be interesting to mess with an opacity fade that takes a long time (1s? 2s?) when you click sunshine or rain to change the background. This would save your awkward jump to the 
 next image. Currently it just snaps over
 
