@@ -32,6 +32,7 @@
   cursor: pointer;
   border: 2px solid white;
   transition: all 0.5s ease;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
 .sound-picker button {
@@ -40,7 +41,14 @@
   width: 120px;
   padding: 30px;
   border-radius: 50%;
+  opacity: 0.5;
 }
+
+.sound-picker button:hover {
+  opacity: 1;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
 .sound-picker button:nth-child(1) {
   background: #4972a1;
 }
@@ -125,6 +133,7 @@ video {
   0% {opacity:0;}
   100% {opacity:1;}
 }
+
 
   @media only screen and (max-width: 768px) {
       .app {

@@ -1,5 +1,3 @@
-# Sup dude!
-
 ## Notes:
 
 ### Seconds, modulo and division weirdness
@@ -14,9 +12,5 @@ Of note is that this shows up three separate times in the project: The initial r
 
 ### Minor thoughts
 
-It might be good to throw in simple hover animations (css) for the sunshine and rain buttons for homogenous user feedback. The 2, 5, and 10 minutes buttons have this, might be good to make it the same across all buttons?
-
 It'd be interesting to mess with an opacity fade that takes a long time (1s? 2s?) when you click sunshine or rain to change the background. This would save your awkward jump to the 
 next image. Currently it just snaps over
-
-Otherwise I think it looks great! Most of my comments are just polish, so good job!
