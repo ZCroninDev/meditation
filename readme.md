@@ -1,16 +1,46 @@
-## Notes:
+# Meditaion
 
-### Seconds, modulo and division weirdness
+Meditation tool web application
 
-#### ex. 1
-![image](https://github.com/ZCroninDev/meditation/blob/main/meditation-app-master/img/img1.png)
+## Description
 
-Sometimes it's tricky correctly processing 0's and singular digits. In Excel, you usually have to specify a cell needs to format like a 'Number' before it will show 08 instead of 8.
-Similarly, JS will never render singular numbers like 02 or 04 instead of 2 or 4. So some simple logic is needed to correctly format. I've thrown in some examples in your project, check it out in app.js
+Meditation is a meditation asssit, white noise web application   
 
-Of note is that this shows up three separate times in the project: The initial render, the first button click timer set, and when the timer winds down to 0:09 etc.
+## Getting Started
 
-### Minor thoughts
+### Dependencies
 
-It'd be interesting to mess with an opacity fade that takes a long time (1s? 2s?) when you click sunshine or rain to change the background. This would save your awkward jump to the 
-next image. Currently it just snaps over
+* HTML5, CSS3, and vanilla javaScript
+
+### Installing
+
+
+### Executing program
+
+* I used Visual Studio Code as my code editor 
+
+
+## Help
+
+
+
+## Authors
+
+ZCroninDev 
+https://github.com/ZCroninDev
+https://twitter.com/ZcroninDev
+
+## Version History
+
+* 0.1
+    * Initial Release
+
+## License
+
+This project is licensed under the GNU License - see the LICENSE.md file for details
+
+## Acknowledgments
+
+Inspiration, code snippets, etc.
+
+
